@@ -8,6 +8,11 @@
 
 <a href="{{ route('users.create') }}">Novo</a>
 
+@if(session('success'))
+<p>{{ session('success') }}</p>
+@endif
+
+
 <table>
     <thead>
         <tr>
