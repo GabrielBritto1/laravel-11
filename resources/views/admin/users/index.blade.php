@@ -26,6 +26,9 @@
         <tr>
             <td>{{ $user->name }}</td>
             <td>{{ $user->email }}</td>
+            <td>
+                <a href="{{ route('users.edit', $user->id) }}">Editar</a>
+            </td>
             <td>-</td>
         </tr>
         @empty
