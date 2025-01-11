@@ -27,6 +27,10 @@
                 <a href="{{ route('users.edit', $user->id) }}">Editar</a>
             </td>
             <td>-</td>
+            <td>
+                <a href="{{ route('users.show', $user->id) }}">Detalhes</a>
+            </td>
+            <td>-</td>
         </tr>
         @empty
         <tr>
