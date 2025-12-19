@@ -14,6 +14,12 @@ Crie o Arquivo .env
 cp .env.example .env
 ```
 
+Buildar os resources caso vá usar tailwind (Não é necessário caso use Bootstrap)
+```sh
+npm install
+npm run build
+```
+
 Suba os containers do projeto
 ```sh
 docker-compose up -d
@@ -51,3 +57,9 @@ php artisan migrate
 
 Acesse o projeto
 [http://localhost:8000](http://localhost:8000)
+
+### (Dica extra)
+## Caso queira colocar o Laravel 12 ao invés do 11 que está pré-instalado, substitue a seguinte linha no arquivo composer.json
+```sh
+"laravel/framework": "^12.0",
+```
